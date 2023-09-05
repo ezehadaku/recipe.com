@@ -7,6 +7,45 @@
     <title>Recipe.com</title>
 </head>
 <body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href=""class="brand-logo">
+                    <img src="img/logo.png" alt="logo" width="14%">
+                </a>
+                <ul class="right">
+                    <li><a href=""class=" text-darken-4 orange-text">Home</a></li>
+                    <li><a href=""class=" text-darken-4 orange-text">Cakes</a></li>
+                    <li><a href=""class=" text-darken-4 orange-text">Soups</a></li>
+                    <li><a href=""class=" text-darken-4 orange-text">Chicken</a></li>
+                    <li><a href=""class=" text-darken-4 orange-text">Customers</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/cake_fruit.jpg" alt="chicken_1">
+                </li>
+                <li>
+                    <img src="img/shrimp_soup.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/chicken_3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/dessert_chocolate.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/ginger_cake.webp" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
     
 
 
@@ -18,7 +57,11 @@
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
-
+            $('.slider').slider(
+                {duration: 5000,
+                interval:1000,
+                indicators: true,
+                height:300});
         });
     </script>
 </body>
